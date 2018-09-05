@@ -1,10 +1,7 @@
 ﻿using Aspose.Zip;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using Aspose.Zip.Saving;
 
 namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
 {
@@ -26,13 +23,22 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
                             archive.CreateEntry("alice29.txt", source1);
                             archive.CreateEntry("asyoulik.txt", source2);
                             //Define the parallelism criterion
-                            Zip.ParallelOptions parallelOptions = new Zip.ParallelOptions();
-                            parallelOptions.ParallelCompressInMemory = ParallelCompressionMode.Always;
-                            archive.Save(zipFile, new ArchiveSaveOptions() { ParallelOptions = parallelOptions, Encoding = Encoding.ASCII, ArchiveComment = "There are two poems from Canterbury corpus" });
+                            var parallelOptions = new ParallelOptions
+                            {
+                                ParallelCompressInMemory = ParallelCompressionMode.Always
+                            };
+                            archive.Save(zipFile,
+                                new ArchiveSaveOptions()
+                                {
+                                    ParallelOptions = parallelOptions,
+                                    Encoding = Encoding.ASCII,
+                                    ArchiveComment = "There are two poems from Canterbury corpus"
+                                });
                         }
                     }
                 }
             }
+
             //ExEnd: UsingParallelismToCompressFiles
         }
     }

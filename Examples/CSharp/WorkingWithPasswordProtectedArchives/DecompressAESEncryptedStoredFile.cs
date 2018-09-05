@@ -1,10 +1,5 @@
 ﻿using Aspose.Zip;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
 {
@@ -21,7 +16,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
             {
                 using (var extracted = File.Create(dataDir + "alice_aesextracted_out.txt"))
                 {
-                    using (Archive archive = new Archive(fs, new ArchiveLoadOptions() { DecryptiptionPassword = "p@s$" }))
+                    using (Archive archive = new Archive(fs, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
                     {
                         using (var decompressed = archive.Entries[0].Open())
                         {

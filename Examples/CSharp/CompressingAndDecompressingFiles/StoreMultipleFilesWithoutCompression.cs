@@ -1,11 +1,7 @@
 ﻿using Aspose.Zip;
 using Aspose.Zip.Saving;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
 {
@@ -22,7 +18,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
                 FileInfo fi1 = new FileInfo(dataDir + "alice29.txt");
                 FileInfo fi2 = new FileInfo(dataDir + "lcet10.txt");
 
-                using (Archive archive = new Archive(new ArchiveEntrySettings(new CompressionSettings(CompressionMethod.Store))))
+                using (Archive archive = new Archive(new ArchiveEntrySettings(new StoreCompressionSettings())))
                 {
                     archive.CreateEntry("alice29.txt", fi1);
                     archive.CreateEntry("lcet10.txt", fi2);

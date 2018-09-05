@@ -1,11 +1,6 @@
 ﻿using Aspose.Zip;
 using Aspose.Zip.Saving;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
 {
@@ -24,15 +19,13 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
 
                 using (var archive = new Archive())
                 {
-                    archive.CreateEntry("alice29.txt", source1, new ArchiveEntrySettings(new CompressionSettings(CompressionMethod.Deflate),
-                           new TraditionalEncryptionSettings("pass1")));
-                    archive.CreateEntry("asyoulik.txt", source2, new ArchiveEntrySettings(new CompressionSettings(CompressionMethod.Deflate),
-                           new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
-                    archive.CreateEntry("fields.c", source3, new ArchiveEntrySettings(new CompressionSettings(CompressionMethod.Deflate),
-                           new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
+                    archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
+                    archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
+                    archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
                     archive.Save(zipFile);
                 }
             }
+
             //ExEnd: CompressFilesWithIndividualPasswords
         }
     }
