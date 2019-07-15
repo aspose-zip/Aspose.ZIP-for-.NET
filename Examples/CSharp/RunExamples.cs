@@ -15,8 +15,9 @@ namespace Aspose.ZIP.Examples
     {
         static void Main(string[] args)
         {
-            License lic = new License();
-            lic.SetLicense("E:\\Lics\\Aspose.Total.lic");
+            ////License Settings
+            //License lic = new License();
+            //lic.SetLicense(@"Aspose.Total.NET.lic");
 
             #region Cmopressing and Decompressing Files
             //CompressSingleFile.Run();
@@ -27,6 +28,7 @@ namespace Aspose.ZIP.Examples
             //DecompressMultipleFiles.Run();
             //DecompressStoredFile.Run();
             //UsingParallelismToCompressFiles.Run();
+            
             #endregion
 
             #region Cmpressing and Decompressing Folders

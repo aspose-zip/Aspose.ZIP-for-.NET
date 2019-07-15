@@ -1,7 +1,8 @@
 ﻿using Aspose.Zip;
+using Aspose.Zip.Saving;
+using Aspose.ZIP;
 using System.IO;
 using System.Text;
-using Aspose.Zip.Saving;
 
 namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
 {
