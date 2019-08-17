@@ -65,6 +65,7 @@
     <Compile Include="CompressingAndDecompressingFiles\DecompressMultipleFiles.cs" />
     <Compile Include="CompressingAndDecompressingFiles\DecompressSingleFile.cs" />
     <Compile Include="CompressingAndDecompressingFiles\DecompressStoredFile.cs" />
+    <Compile Include="CompressingAndDecompressingFiles\ModifyingZipFile.cs" />
     <Compile Include="CompressingAndDecompressingFiles\StoreMultipleFilesWithoutCompression.cs" />
     <Compile Include="CompressingAndDecompressingFiles\UsingParallelismToCompressFiles.cs" />
     <Compile Include="CompressingAndDecompressingFolders\CompressDirectory.cs" />

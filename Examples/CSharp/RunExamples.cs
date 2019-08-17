@@ -29,6 +29,7 @@ namespace Aspose.ZIP.Examples
             //DecompressStoredFile.Run();
             //UsingParallelismToCompressFiles.Run();
             //CompressionSettings.Run();
+            ModifyingZipFile.Run();
             #endregion
 
             #region Cmpressing and Decompressing Folders
