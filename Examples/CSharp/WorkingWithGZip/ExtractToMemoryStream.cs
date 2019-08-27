@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
+namespace Aspose.ZIP.Examples.WorkingWithGZip
 {
     public class ExtractToMemoryStream
     {
@@ -23,6 +23,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
                 Console.WriteLine(archive.Name);
             }
             //ExEnd: ExtractToMemoryStream
+            Console.WriteLine("Successfully Extractd to Memory Stream");
         }
     }
 }

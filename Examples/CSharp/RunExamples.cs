@@ -1,6 +1,7 @@
 ﻿using Aspose.Zip;
 using Aspose.ZIP.Examples.CompressingAndDecompressingFiles;
 using Aspose.ZIP.Examples.CompressingAndDecompressingFolders;
+using Aspose.ZIP.Examples.WorkingWithGZip;
 using Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,6 @@ namespace Aspose.ZIP.Examples
             //UsingParallelismToCompressFiles.Run();
             //CompressionSettings.Run();
             //ModifyingZipFile.Run();
-            ExtractToMemoryStream.Run();
             #endregion
 
             #region Cmpressing and Decompressing Folders
@@ -45,6 +45,13 @@ namespace Aspose.ZIP.Examples
             //DecompressAESEncryptedFile.Run();
             //StoreMutlipleFilesWithoutCompressionWithPassword.Run();
             //DecompressAESEncryptedStoredFile.Run();
+            #endregion
+
+            #region WorkingWithGZip
+            OpenGZipArchive.Run();
+            ExtractToMemoryStream.Run();
+            CompressFile.Run();
+            SaveToStream.Run();
             #endregion
 
             Console.WriteLine("Done with executing selected example (s)");
