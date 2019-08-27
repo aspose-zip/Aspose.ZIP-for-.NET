@@ -35,8 +35,8 @@
     <StartupObject>Aspose.ZIP.Examples.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Zip, Version=19.6.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Zip.19.6.1\lib\net40\Aspose.Zip.dll</HintPath>
+    <Reference Include="Aspose.Zip, Version=19.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Zip.19.8.0\lib\net40\Aspose.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -65,6 +65,7 @@
     <Compile Include="CompressingAndDecompressingFiles\DecompressMultipleFiles.cs" />
     <Compile Include="CompressingAndDecompressingFiles\DecompressSingleFile.cs" />
     <Compile Include="CompressingAndDecompressingFiles\DecompressStoredFile.cs" />
+    <Compile Include="CompressingAndDecompressingFiles\ExtractToMemoryStream.cs" />
     <Compile Include="CompressingAndDecompressingFiles\ModifyingZipFile.cs" />
     <Compile Include="CompressingAndDecompressingFiles\StoreMultipleFilesWithoutCompression.cs" />
     <Compile Include="CompressingAndDecompressingFiles\UsingParallelismToCompressFiles.cs" />
