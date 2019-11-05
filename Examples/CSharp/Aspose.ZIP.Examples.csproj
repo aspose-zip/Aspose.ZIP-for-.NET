@@ -35,8 +35,8 @@
     <StartupObject>Aspose.ZIP.Examples.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Zip, Version=19.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Zip.19.8.0\lib\net40\Aspose.Zip.dll</HintPath>
+    <Reference Include="Aspose.Zip, Version=19.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Zip.19.10.0\lib\net40\Aspose.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -87,6 +87,11 @@
     <Compile Include="WorkingWithPasswordProtectedArchives\PasswordProtectDirectory.cs" />
     <Compile Include="WorkingWithPasswordProtectedArchives\PasswordProtectWithAES.cs" />
     <Compile Include="WorkingWithPasswordProtectedArchives\StoreMutlipleFilesWithoutCompressionWithPassword.cs" />
+    <Compile Include="WorkingWithSevenZip\AESEncryptionSettings.cs" />
+    <Compile Include="WorkingWithSevenZip\ArchiveWithEncryptedEntry.cs" />
+    <Compile Include="WorkingWithSevenZip\CreateSevenZipEntries.cs" />
+    <Compile Include="WorkingWithSevenZip\CreateSevenZipEntry.cs" />
+    <Compile Include="WorkingWithSevenZip\EntriesWithDifferentPasswords.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
