@@ -16,6 +16,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
             string dataDir = RunExamples.GetDataDir_Data();
             UsingBzip2CompressionSettings(dataDir);
             UsingLZMACompressionSettings(dataDir);
+            UsingPPMdCompressionSettings(dataDir);
         }
 
         public static void UsingBzip2CompressionSettings(string dataDir)
@@ -44,6 +45,20 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
                 }
             }
             //ExEnd: UsingLZMACompressionSettings
+        }
+
+        public static void UsingPPMdCompressionSettings(string dataDir)
+        {
+            //ExStart: UsingPPMdCompressionSettings
+            using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileMode.Create))
+            {
+                using (Archive archive = new Archive(new ArchiveEntrySettings(new PPMdCompressionSettings())))
+                {
+                    archive.CreateEntry("sample.txt", dataDir + "sample.txt");
+                    archive.Save(zipFile);
+                }
+            }
+            //ExEnd: UsingPPMdCompressionSettings
         }
     }
 }
