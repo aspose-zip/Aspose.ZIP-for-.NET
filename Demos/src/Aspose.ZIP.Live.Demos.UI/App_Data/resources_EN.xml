@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <res name="ApplicationTitle">Aspose.ZIP Live Demos</res>
+  <res name="ApplicationTitle2">On premise APIs or Free Apps to compose archive, add entries or delete entries from existing archives. Encrypt using ZipCrypto or AES128, 192 and AES256.</res>
+
+  <res name="HomePageTitle">Home</res>
+  <res name="DownloadFileLinkTitle">Download your file</res>
+	<res name="NoSearchResultsMessage">No search results</res>
+  <res name="FileConvertedSuccessMessage">Your file has been converted successfully, please check your email to download converted file</res>
+  <res name="InvalidFileExtension">Invalid file, please upload a file with extension</res>
+  <res name="InvalidFile">Invalid file, please ensure that uploading correct file</res>
+	<res name="FileAmountMessageOne">Please select only one file</res>
+	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
+  <res name="btnConvertNow">ZIP Files</res>
+	<res name="AsposeZIP">Aspose.ZIP</res>
+	<res name="AsposeZip">Aspose.ZIP</res>
+  <res name="PageNotFound">404 Page not found</res>
+  <res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
+  <res name="btnBackHome">Back to Home</res>
+	<res name="FileSelectMessage">Please select files to compress</res>
+  <res name="SaveAs">Encryption Type</res>
+	<res name="zipZIPFileSaveAsOptions">Traditional,AES128, AES192, AES256</res>
+  <res name="DropOrUploadFile">Drop or upload your files</res>
+  <res name="DropOrUploadFiles">Drop or upload your files</res>
+	<res name="zipZIPFileValidationExpression"></res>
+  <res name="FileConvertedSuccessMessage1">Your file has been Zipped successfully</res>
+  <res name="DownLoadNow">DOWNLOAD NOW</res>
+  <res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
+	<res name="zipZIPFilePageTitle">Online File Compression App for All Types of Files</res>
+	<res name="zipZIPFileMetaDescription">Upload multiple files to get a compressed archive in ZIP format from any OS, on any browser.</res>
+	<res name="zipZIPFileTitle">Compress Multiple Files into a Single ZIP Archive</res>
+	<res name="zipZIPFileSubTitle">Upload multiple files to get a compressed archive in ZIP format from any OS, on any browser.</res>
+	<!-- zip-file App - How To-->
+	<res name="HowtoZIPFileTitle">How to Compress files using Aspose.ZIP Zip Files</res>
+	<res name="HowtoZIPFileFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoZIPFileFeature2">Your file will be uploaded and will be compressed.</res>
+	<res name="HowtoZIPFileFeature3">Download link of compressed file will be available instantly.</res>
+	<res name="WrongRegExpMessage">Wrong regular expression</res>
+ 
+  
+	<res name="AsposeProductFor"></res>
+
+ 
+  <res name="ZIPFileFeature1">Fast and Easy Compress Multiple Files into a Single ZIP Archive</res>
+  <res name="ZIPFileFeature1Description">Upload your files and click on “Compress” button. You will get the download link as soon as the files are compressed</res>
+
+	<res name="ZIPFileFeature2">ZIP Files your files from Anywhere</res>
+  <res name="ZIPFileFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+  <res name="ZIPFileFeature3">Compression Quality</res>
+  <res name="Feature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	
+  <res name="PoweredBy">Powered by</res>
+  <res name="zip-fileh4">Zip files</res>
+  
+  <res name="SaveAsDescription">Save as: {0}</res>
+  <res name="ConversionCategory">conversion</res>
+  <res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>
+
+	
+	<res name="ZIPFileButton">Zip Files</res>
+	<res name="ZIPFileAnotherFile">Compress Other Files</res>
+	<res name="ZIPFileSuccessMessage">Your files are compressed successfully</res>
+	
+	<res name="ZIPFileAction">Compress</res>
+</resources>
+
+
+

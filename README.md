@@ -2,7 +2,7 @@
 
 [Aspose.ZIP for .NET](https://products.aspose.com/zip/net) is a flexible documents compression and archive manipulation API for standard zip format. API enables .NET applications to achieve files compression/decompression, archiving files as well as folders and encryption of archives. It provides protection via user-defined passwords and traditional encryption using ZipCrypto or AES encryption such as AES128, 192 and AES256.
 
-This repository contains [Examples](Examples) projects for Aspose.ZIP for .NET to help you learn and write your own applications.
+This repository contains [Demos](Demos) and [Examples](Examples) projects for Aspose.ZIP for .NET to help you learn and write your own applications.
 
 <p align="center">
 <a title="Download complete Aspose.ZIP for .NET source code" href="https://github.com/aspose-zip/Aspose.Zip-for-.NET/archive/master.zip">
@@ -12,6 +12,7 @@ This repository contains [Examples](Examples) projects for Aspose.ZIP for .NET t
 
 Directory | Description
 --------- | -----------
+[Demos](Demos)  | Aspose.ZIP for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 
 ## How to Run the Examples
