@@ -9,6 +9,7 @@ using System.Text;
 using System.Web;
 using System.Reflection;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace Aspose.ZIP.Live.Demos.UI.Models
 {
@@ -117,10 +118,9 @@ namespace Aspose.ZIP.Live.Demos.UI.Models
 		/// DecompressFile method to decompress file
 		///</Summary>
 		
-		public Response DecompressFile(string fileName, string folderName, string userEmail, string ispasswordprotected, string password, string encryptionType)
+		public Response DecompressFile(string fileName, string folderName,  string ispasswordprotected, string password, string encryptionType)
 		{
-
-			Collection<string> Files = new Collection<string>();
+			string Files = "";			
 			string archivefileName = "";
 			string outFolder = Guid.NewGuid().ToString();
 			string outPath = Config.Configuration.OutputDirectory + outFolder;
@@ -151,7 +151,14 @@ namespace Aspose.ZIP.Live.Demos.UI.Models
 							foreach (ArchiveEntry aEntry in archive.Entries)
 							{
 								archivefileName = aEntry.Name;
-								Files.Add(archivefileName);
+								if (Files == "")
+								{
+									Files = archivefileName;
+								}
+								else
+								{
+									Files += "," + archivefileName;
+								}
 								using (var extracted = System.IO.File.Create(outPath + "\\" + archivefileName))
 								{
 									using (var decompressed = aEntry.Open(password))
@@ -171,7 +178,14 @@ namespace Aspose.ZIP.Live.Demos.UI.Models
 							foreach (ArchiveEntry aEntry in archive.Entries)
 							{
 								archivefileName = aEntry.Name;
-								Files.Add(archivefileName);
+								if (Files == "")
+								{
+									Files = archivefileName;
+								}
+								else
+								{
+									Files += "," + archivefileName;
+								}
 								using (var extracted = System.IO.File.Create(outPath + "\\" + archivefileName))
 								{
 									using (var decompressed = aEntry.Open())
@@ -187,7 +201,7 @@ namespace Aspose.ZIP.Live.Demos.UI.Models
 				}
 			});
 			response.FolderName = outFolder;
-			response.Files = Files;
+			response.Files =  Files;
 			return response;
 		}
 		private void WriteArchiveEntry(FileStream  extracted, Stream decompressed)

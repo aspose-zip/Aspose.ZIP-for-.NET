@@ -61,28 +61,42 @@ function workSuccess(data, textStatus, xhr) {
 		var fileName = response[1];
 		var folderName = response[2];
 		var fullFileName = response[3];
+		var decompressedfiles = response[4].toString();			
 		if (statusCode === '200') {
 
-			var url = "";
 			$('#WorkPlaceHolder').addClass('hidden');
 			$('#DownloadPlaceHolder').removeClass('hidden');
-			if (fileName !== "")
-			{
-				 url = encodeURI(o.UIBasePath + `common/download?file=${fileName}&folder=${folderName}`);
+			var url = "";
+			if (decompressedfiles === "") {		
+				
+				if (fileName !== "") {
+					url = encodeURI(o.UIBasePath + `common/download?file=${fileName}&folder=${folderName}`);
+				}
+				else {
+					url = encodeURI(o.UIBasePath + `common/downloadzip?fullFilePath=${fullFileName}`);
+				}
+
+				$('#DownloadButton').attr('href', url);
+				o.DownloadUrl = url;
 			}
 			else {
-				url = encodeURI(o.UIBasePath + `common/downloadzip?fullFilePath=${fullFileName}`);
+				$('.convertbtn').hide(); 
+				var _downloadFileLinks = "";
+				var _files = decompressedfiles.split(',');
+				for ( i = 0; i < _files.length; i++)
+				{
+					url = encodeURI(o.UIBasePath + `common/download?file=${_files[i]}&folder=${folderName}`);
+					_downloadFileLinks += "<a target=\"_blank\" href=\"" + url + "\" class=\"btn btn-link refresh-c\">" + _files[i] + " <i class=\"fa - refresh fa\"></i></a>";
+				}
+				
+				$('#dvDecompressFile').append(_downloadFileLinks);
+				$('#dvDecompressFile').show();
 			}
-			
-			$('#DownloadButton').attr('href', url);
-			o.DownloadUrl = url;
 		} else {
 			showAlert(statusCode);
 		}
 	}
 }
-
-
 
 function hideAlert() {
 	$('#alertMessage').addClass("hidden");
@@ -201,7 +215,15 @@ function requestZipFile() {
 	
 	request(url, data);
 }
+function requestUnZipFile() {
+	let data = fileDrop.prepareFormData();
+	if (data === null)
+		return;
 
+	let url = o.UIBasePath + 'zip//unzip-file?encryptType=' + $('#saveAs').val() + "&setPass=" + $('#chkPasswordProtected').prop("checked") + "&pass=" + $('#txtPassword').val();
+
+	request(url, data);
+}
 
 
 function prepareDownloadUrl() {

@@ -40,60 +40,18 @@ namespace Aspose.ZIP.Live.Demos.UI.Models
 		///<Summary>
 		/// Get or set Files
 		///</Summary>
-		public Collection<string> Files;
+		public string Files;
 		///<Summary>
 		/// Get or set FileProcessingErrorCode
 		///</Summary>
 		public FileProcessingErrorCode FileProcessingErrorCode { get; set; }
 					   
-		public string ViewerURL(string product, string callbackURL)
-		{
-			var url = new StringBuilder();
-			url.Append(string.Format("", product));
-			url.Append("/");
-			url.Append(FolderName);
-			url.Append("?fileName=");
-			url.Append(HttpUtility.UrlEncode(FileName));
-			url.Append("&callbackURL=");
-			url.Append(callbackURL);
-			
-			return url.ToString();
-		}
-
-		/// <summary>
-		/// Generate the viewer url with the product name by the file extension
-		/// </summary>
-		/// <param name="callbackURL"></param>
-		/// <returns></returns>
-		public string ViewerURL(string callbackURL)
-		{
-			return ViewerURL(GetProductByFileExtension(), callbackURL);
-		}
-
-		private string GetProductByFileExtension()
-		{
-			switch (Path.GetExtension(FileName)?.ToLower())
-			{
-				case ".eml":
-				case ".msg":
-					return "email";
-				case ".mhtml":
-				case ".html":
-					return "html";
-				case ".epub":
-				case ".ps":
-				case ".xps":
-				case ".pdf":
-					return "pdf";
-				default:
-					return "words";
-			}
-		}
+		
 
 		public override string ToString()
 		{
 			//return $"{StatusCode} - {Status}";
-			return $"{StatusCode}|{FileName}|{FolderName}|{Text}";
+			return $"{StatusCode}|{FileName}|{FolderName}|{Text}|{Files}";
 			
 		}
 

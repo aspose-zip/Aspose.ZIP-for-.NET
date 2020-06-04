@@ -19,10 +19,12 @@
   <res name="btnBackHome">Back to Home</res>
 	<res name="FileSelectMessage">Please select files to compress</res>
   <res name="SaveAs">Encryption Type</res>
-	<res name="zipZIPFileSaveAsOptions">Traditional,AES128, AES192, AES256</res>
+	<res name="zipZIPFileSaveAsOptions">Traditional,AES128,AES192,AES256</res>
+	<res name="zipUnzipFileSaveAsOptions">Traditional,AES128,AES192,AES256</res>
   <res name="DropOrUploadFile">Drop or upload your files</res>
   <res name="DropOrUploadFiles">Drop or upload your files</res>
 	<res name="zipZIPFileValidationExpression"></res>
+	<res name="zipUnzipFileValidationExpression">.zip</res>
   <res name="FileConvertedSuccessMessage1">Your file has been Zipped successfully</res>
   <res name="DownLoadNow">DOWNLOAD NOW</res>
   <res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
@@ -50,18 +52,34 @@
   <res name="Feature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
 	
   <res name="PoweredBy">Powered by</res>
-  <res name="zip-fileh4">Zip files</res>
-  
+  <res name="zip-fileh4">Zip files</res>  
   <res name="SaveAsDescription">Save as: {0}</res>
   <res name="ConversionCategory">conversion</res>
-  <res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>
-
-	
+  <res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>	
 	<res name="ZIPFileButton">Zip Files</res>
 	<res name="ZIPFileAnotherFile">Compress Other Files</res>
-	<res name="ZIPFileSuccessMessage">Your files are compressed successfully</res>
-	
+	<res name="ZIPFileSuccessMessage">Your files are compressed successfully</res>	
 	<res name="ZIPFileAction">Compress</res>
+	<res name="HowtoUnzipFileTitle">How to Unzip files using Aspose.ZIP Unzip files</res>
+	<res name="HowtoUnzipFileFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoUnzipFileFeature2">Your file will be uploaded and will be decompressed.</res>
+	<res name="HowtoUnzipFileFeature3">Download link of compressed file will be available instantly.</res>
+	<res name="UnzipFileFeature1">Fast and Easy Decompress Archived Files Online</res>
+	<res name="UnzipFileFeature1Description">Upload your file and click on “Decompress” button. You will get the list of files to download as soon as the file is decompressed</res>
+
+	<res name="UnzipFileFeature2">Unzip your files from Anywhere</res>
+	<res name="UnzipFileFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="UnzipFileFeature3">Decompression Quality</res>
+	<res name="UnzipFileButton">UnZip Files</res>
+	<res name="UnzipFileAnotherFile">Decompress Other Files</res>
+	<res name="UnzipFileSuccessMessage">Your files are decompressed successfully</res>
+	<res name="UnzipFileAction">Decompress</res>
+
+	<res name="zipUnzipFilePageTitle">Tool to Decompress ZIP Archives | Expand ZIP Files Online</res>
+	<res name="zipUnzipFileMetaDescription">Simply load your ZIP archives and decrompress them on the fly to get individual files. Upload password protected files and extract on any platform</res>
+	<res name="zipUnzipFileTitle">Decompress Archived Files Online</res>
+	<res name="zipUnzipFileSubTitle">Upload your simple or password protected ZIP archives and uncompress them to extract individual files.</res>
+	
 </resources>
 
 

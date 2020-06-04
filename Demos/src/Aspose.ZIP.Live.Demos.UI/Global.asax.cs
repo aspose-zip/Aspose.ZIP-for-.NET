@@ -54,9 +54,14 @@ namespace Aspose.ZIP.Live.Demos.UI
 			);
 			
 			routes.MapRoute(
-				"AsposeConversionRoute",
+				"AsposeZipFileRoute",
 				"{product}/zip-file",
 				 new { controller = "ZIPFile", action = "ZIPFile" }
+			);
+			routes.MapRoute(
+				"AsposeUnZipFileRoute",
+				"{product}/unzip-file",
+				 new { controller = "UnzipFile", action = "UnzipFile" }
 			);
 			routes.MapRoute(
 				"DownloadFileRoute",
