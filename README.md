@@ -16,7 +16,7 @@ Directory | Description
 [Demos](Demos)  | Aspose.ZIP for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 
-# .NET API to Manipulate Zipped Archives
+## Archive Processing Features
 
 - [Compress files](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Files#CompressingandDecompressingFiles-CompressingFiles) and [folders](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Folders#CompressingandDecompressingFolders-CompressingDirectoryContents) into standard ZIP formats.
 - Supports Deflate, `Bzip2` & `LZMA` compression algorithms.
