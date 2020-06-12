@@ -1,6 +1,6 @@
 # Aspose.ZIP for .NET
 
-[Aspose.ZIP for .NET](https://products.aspose.com/zip/net) is a flexible documents compression and archive manipulation API for standard zip format. API enables .NET applications to achieve files compression/decompression, archiving files as well as folders and encryption of archives. It provides protection via user-defined passwords and traditional encryption using ZipCrypto or AES encryption such as AES128, 192 and AES256.
+[Aspose.ZIP for .NET](https://products.aspose.com/zip/net) class library allows your .NET applications to compress/decompress files and folders without getting into the complexity of coding new compression algorithms or understanding the existing ones. Enable your programs to work with a vast range of features, such as, creating archives, saving archives, archive extraction, encrypting/decrypting archives, compressing single or multiple files as well as directory contents. It also allows you to apply security to your archived and compressed files and folders via password using ZipCrypto or AES (128, 192, 256) encryption or mixed encryption.
 
 This repository contains [Demos](Demos) and [Examples](Examples) projects for Aspose.ZIP for .NET to help you learn and write your own applications.
 
@@ -11,19 +11,12 @@ This repository contains [Demos](Demos) and [Examples](Examples) projects for As
 </p>
 
 
-
 Directory | Description
 --------- | -----------
 [Demos](Demos)  | Aspose.ZIP for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 
 # .NET API to Manipulate Zipped Archives
-
-It is a standalone .NET API to create, manipulate, extract & protect archive formats including ZIP, BZIP, BZ2 & TAR. 
-
-[Aspose.ZIP for .NET](https://products.aspose.com/zip/net) class library allows your .NET applications to compress/decompress files and folders without getting into the complexity of coding new compression algorithms or understanding the existing ones. Enable your programs to work with a vast range of features, such as, creating archives, saving archives, archive extraction, encrypting/decrypting archives, compressing single or multiple files as well as directory contents. It also allows you to apply security to your archived and compressed files and folders via password, AES (128, 192, 256) encryption or mixed encryption.mixed encryption.
-
-## Archive Processing Features
 
 - [Compress files](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Files#CompressingandDecompressingFiles-CompressingFiles) and [folders](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Folders#CompressingandDecompressingFolders-CompressingDirectoryContents) into standard ZIP formats.
 - Supports Deflate, `Bzip2` & `LZMA` compression algorithms.
