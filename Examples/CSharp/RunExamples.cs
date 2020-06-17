@@ -25,7 +25,7 @@ namespace Aspose.ZIP.Examples
             //CompressMultipleFiles.Run();
             //CompressFilesByFileInfo.Run();
             //StoreMultipleFilesWithoutCompression.Run();
-            //DecompressSingleFile.Run();
+            DecompressSingleFile.Run();
             //DecompressMultipleFiles.Run();
             //DecompressStoredFile.Run();
             //UsingParallelismToCompressFiles.Run();
@@ -48,10 +48,10 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region WorkingWithGZip
-            OpenGZipArchive.Run();
-            ExtractToMemoryStream.Run();
-            CompressFile.Run();
-            SaveToStream.Run();
+            //OpenGZipArchive.Run();
+            //ExtractToMemoryStream.Run();
+            //CompressFile.Run();
+            //SaveToStream.Run();
             #endregion
 
             Console.WriteLine("Done with executing selected example (s)");
