@@ -2,7 +2,7 @@
 
 [Aspose.ZIP for .NET](https://products.aspose.com/zip/net) class library allows your .NET applications to compress/decompress files and folders without getting into the complexity of coding new compression algorithms or understanding the existing ones. Enable your programs to work with a vast range of features, such as, creating archives, saving archives, archive extraction, encrypting/decrypting archives, compressing single or multiple files as well as directory contents. It also allows you to apply security to your archived and compressed files and folders via password using ZipCrypto or AES (128, 192, 256) encryption or mixed encryption.
 
-This repository contains [Demos](Demos) and [Examples](Examples) projects for Aspose.ZIP for .NET to help you learn and write your own applications.
+
 
 <p align="center">
 <a title="Download complete Aspose.ZIP for .NET source code" href="https://github.com/aspose-zip/Aspose.Zip-for-.NET/archive/master.zip">
@@ -10,6 +10,7 @@ This repository contains [Demos](Demos) and [Examples](Examples) projects for As
   </a>
 </p>
 
+This repository contains [Demos](Demos) and [Examples](Examples) projects for Aspose.ZIP for .NET to help you learn and write your own applications.
 
 Directory | Description
 --------- | -----------
