@@ -2,8 +2,6 @@
 
 [Aspose.ZIP for .NET](https://products.aspose.com/zip/net) class library allows your .NET applications to compress/decompress files and folders without getting into the complexity of coding new compression algorithms or understanding the existing ones. Enable your programs to work with a vast range of features, such as, creating archives, saving archives, archive extraction, encrypting/decrypting archives, compressing single or multiple files as well as directory contents. It also allows you to apply security to your archived and compressed files and folders via password using ZipCrypto or AES (128, 192, 256) encryption or mixed encryption.
 
-
-
 <p align="center">
 <a title="Download complete Aspose.ZIP for .NET source code" href="https://github.com/aspose-zip/Aspose.Zip-for-.NET/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
@@ -17,7 +15,7 @@ Directory | Description
 [Demos](Demos)  | Aspose.ZIP for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 
-## Archive Processing Features
+# Archive Processing Features
 
 - [Compress files](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Files#CompressingandDecompressingFiles-CompressingFiles) and [folders](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Folders#CompressingandDecompressingFolders-CompressingDirectoryContents) into standard ZIP formats.
 - Supports Deflate, `Bzip2` & `LZMA` compression algorithms.
@@ -27,12 +25,6 @@ Directory | Description
 - Use `Gzip` or `Bzip2` to pack files & folders into a `TAR` archive.
 - Supports `LZMA` or `LZMA2` compression & optional encryption to create `7z` archives.
 - Create self-extracting compressed archives.
-
-## Enhancements in Version 20.5
-
-- Support for `RAR4` archive extraction.
-
-For the detailed notes, please visit [Aspose.ZIP for .NET 20.5 Release Notes](https://docs.aspose.com/display/zipnet/Aspose.ZIP+for+.NET+20.5+Release+Notes).
 
 ## Compress Files As
 
