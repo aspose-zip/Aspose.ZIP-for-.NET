@@ -1,4 +1,4 @@
-# Aspose.ZIP for .NET
+# .NET API for Files Compression & Archiving
 
 [Aspose.ZIP for .NET](https://products.aspose.com/zip/net) class library allows your .NET applications to compress/decompress files and folders without getting into the complexity of coding new compression algorithms or understanding the existing ones. Enable your programs to work with a vast range of features, such as, creating archives, saving archives, archive extraction, encrypting/decrypting archives, compressing single or multiple files as well as directory contents. It also allows you to apply security to your archived and compressed files and folders via password using ZipCrypto or AES (128, 192, 256) encryption or mixed encryption.
 
@@ -8,18 +8,16 @@
   </a>
 </p>
 
-This repository contains [Demos](Demos) and [Examples](Examples) projects for Aspose.ZIP for .NET to help you learn and write your own applications.
-
 Directory | Description
 --------- | -----------
-[Demos](Demos)  | Aspose.ZIP for .NET Live Demos Source Code
-[Examples](Examples)  | A collection of .NET examples that help you learn the product features
+[Demos](Demos)  | Source code for live demos hosted at https://products.aspose.app/zip/family.
+[Examples](Examples)  | A collection of .NET examples that help you learn the product features.
 
-# Archive Processing Features
+# Zip & Unzip Files via .NET
 
-- [Compress files](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Files#CompressingandDecompressingFiles-CompressingFiles) and [folders](https://docs.aspose.com/display/zipnet/Compressing+and+Decompressing+Folders#CompressingandDecompressingFolders-CompressingDirectoryContents) into standard ZIP formats.
+- [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP formats.
 - Supports Deflate, `Bzip2` & `LZMA` compression algorithms.
-- Apply simple password or [`AES128`](https://docs.aspose.com/display/zipnet/Password+Protecting+Archives#PasswordProtectingArchives-EncryptionofFileswithAES128), [`AES192`](https://docs.aspose.com/display/zipnet/Password+Protecting+Archives#PasswordProtectingArchives-EncryptionofFileswithAES192), [`AES256`](https://docs.aspose.com/display/zipnet/Password+Protecting+Archives#PasswordProtectingArchives-EncryptionofFileswithAES256) encryption to archives.
+- [Apply simple password or `AES128`, `AES192`, `AES256` encryption to archives](https://docs.aspose.com/zip/net/password-protecting-archives/).
 - Employ different protection scheme to each file within an archive.
 - Append more files to an existing zipped archive.
 - Use `Gzip` or `Bzip2` to pack files & folders into a `TAR` archive.
@@ -38,13 +36,11 @@ Directory | Description
 
 Aspose.ZIP for .NET is implemented using Managed C# and can be used with any .NET language like C#, VB.NET, F# and so on. It can be integrated with any kind of .NET application, from ASP.NET web applications to Windows .NET applications. 
 
-## Getting Started with Aspose.ZIP for .NET
+## Get Started with Aspose.ZIP for .NET
 
 Are you ready to give Aspose.ZIP for .NET a try? Simply execute `Install-Package Aspose.Zip` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.ZIP for .NET and want to upgrade the version, please execute `Update-Package Aspose.Zip` to get the latest version.
 
-## Compress DAT as ZIP using C# Code
-
-You can execute the following code snippet to see how Aspose.ZIP API works in your environment or check the [GitHub Repository](https://github.com/aspose-zip/Aspose.ZIP-for-.NET) for other common usage scenarios.
+## Compress DAT as ZIP
 
 ```csharp
 using (var arch = new Archive())
@@ -56,8 +52,6 @@ using (var arch = new Archive())
 
 ## Create 7z Archive with AES Encryption
 
-Aspose.Zip for .NET allows you to apply password protection and encryption to zipped archives. The following C# code sample demonstrates the creation of a Seven Zip file with AES encryption setting.
-
 ```csharp
 using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new SevenZipAESEncryptionSettings("p@s$"))))
 {
@@ -66,4 +60,4 @@ using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new Sev
 }
 ```
 
-[Product Page](https://products.aspose.com/zip/net) | [Docs](https://docs.aspose.com/display/zipnet/Home) | [Demos](https://products.aspose.app/zip/family) | [API Reference](https://apireference.aspose.com/zip/net) | [Examples](https://github.com/aspose-zip/Aspose.ZIP-for-.NET) | [Blog](https://blog.aspose.com/category/zip/) | [Free Support](https://forum.aspose.com/c/zip) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/zip/net) | [Docs](https://docs.aspose.com/zip/net/) | [Demos](https://products.aspose.app/zip/family) | [API Reference](https://apireference.aspose.com/zip/net) | [Examples](https://github.com/aspose-zip/Aspose.ZIP-for-.NET) | [Blog](https://blog.aspose.com/category/zip/) | [Free Support](https://forum.aspose.com/c/zip) | [Temporary License](https://purchase.aspose.com/temporary-license)
