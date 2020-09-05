@@ -35,8 +35,8 @@
     <StartupObject>Aspose.ZIP.Examples.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Zip, Version=20.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Zip.20.6.0\lib\net40\Aspose.Zip.dll</HintPath>
+    <Reference Include="Aspose.Zip, Version=20.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Zip.20.8.0\lib\net40\Aspose.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
