@@ -59,5 +59,11 @@ using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new Sev
    archive.Save("archive.7z");
 }
 ```
-
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/zip/net) | [Docs](https://docs.aspose.com/zip/net/) | [Demos](https://products.aspose.app/zip/family) | [API Reference](https://apireference.aspose.com/zip/net) | [Examples](https://github.com/aspose-zip/Aspose.ZIP-for-.NET) | [Blog](https://blog.aspose.com/category/zip/) | [Free Support](https://forum.aspose.com/c/zip) | [Temporary License](https://purchase.aspose.com/temporary-license)
+------------
+##### [Demos](https://products.aspose.app/zip/family):
+- [Zip-File](https://products.aspose.app/zip/zip-file)
+- [Unzip-File](https://products.aspose.app/zip/unzip-file)
+- [Conversion](https://products.aspose.app/zip/conversion)
+- [Merger](https://products.aspose.app/zip/merger)
+------------
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/zip/net) | [Docs](https://docs.aspose.com/zip/net/) | [API Reference](https://apireference.aspose.com/zip/net) | [Examples](https://github.com/aspose-zip/Aspose.ZIP-for-.NET) | [Blog](https://blog.aspose.com/category/zip/) | [Free Support](https://forum.aspose.com/c/zip) | [Temporary License](https://purchase.aspose.com/temporary-license)
