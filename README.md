@@ -42,23 +42,32 @@ Aspose.ZIP for .NET is implemented using Managed C# and can be used with any .NE
 
 Are you ready to give Aspose.ZIP for .NET a try? Simply execute `Install-Package Aspose.Zip` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.ZIP for .NET and want to upgrade the version, please execute `Update-Package Aspose.Zip` to get the latest version.
 
-## Compress DAT as ZIP
+## How to ZIP files in C#
 
 ```csharp
-using (var arch = new Archive())
+using (var archive = new Archive())
 {
-   arch.CreateEntry("filename.dat", dir + "file.dat");
-   arch.Save(dir + "result.zip");
+   archive.CreateEntry("entry_name.dat", "input_file.dat");
+   archive.Save("result_archive.zip");
 }
 ```
 
-## Create 7z Archive with AES Encryption
+## How to UnZIP files in C#
+
+```csharp
+using (var archive = new Archive("input_archive.zip"))
+{
+   archive.ExtractToDirectory("\\outputDirectory");
+}
+```
+ 
+## How to create 7z Archive with AES Encryption
 
 ```csharp
 using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new SevenZipAESEncryptionSettings("p@s$"))))
 {
    archive.CreateEntry("data.bin", new MemoryStream(new byte[] { 0x00, 0xFF }));
-   archive.Save("archive.7z");
+   archive.Save("result_archive.7z");
 }
 ```
 ------------
