@@ -17,22 +17,22 @@ Directory | Description
 
 # Zip & Unzip Files via .NET
 
-- [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP formats.
-- Supports Deflate, `Bzip2` & `LZMA` compression algorithms.
+- [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP format using Deflate, Bzip2, LZMA or PPMd compression algorithm.
+- Extract RAR4 and RAR5 archives, with and without encryption.
 - [Apply simple password or `AES128`, `AES192`, `AES256` encryption to archives](https://docs.aspose.com/zip/net/password-protecting-archives/).
 - Employ different protection scheme to each file within an archive.
 - Append more files to an existing zipped archive.
-- Use `Gzip` or `Bzip2` to pack files & folders into a `TAR` archive.
-- Supports `LZMA` or `LZMA2` compression & optional encryption to create `7z` archives.
+- Use `Gzip`, `Bzip2`, `Xz` and `Lzip` to pack files & folders into a `TAR` archive.
+- Supports `LZMA`, `LZMA2` or `Bzip2`  compression & optional encryption to create `7z` archives.
 - Create self-extracting compressed archives.
 
 ## Compress Files As
 
-**Compression:** ZIP, TAR, GZIP, BZ2
+**Compression:** Zip, Tar, GZip, Bz2, Xz, Lzip, 7z
 
 ## Read Archives
 
-**Decompression:** ZIP, TAR, GZIP, BZ2
+**Decompression:** Zip, Rar, Tar, GZip, Bz2, Xz, Lzip
 
 ## Platform Independence
 
