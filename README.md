@@ -15,24 +15,25 @@ Directory | Description
 [Demos](Demos)  | Source code for live demos hosted at https://products.aspose.app/zip/family.
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features.
 
-# Zip & Unzip Files via .NET
+# Compress & Extract Files via .NET
 
 - [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP format using Deflate, Bzip2, LZMA or PPMd compression algorithm.
 - Extract RAR4 and RAR5 archives, with and without encryption.
 - [Apply simple password or `AES128`, `AES192`, `AES256` encryption to archives](https://docs.aspose.com/zip/net/password-protecting-archives/).
 - Employ different protection scheme to each file within an archive.
 - Append more files to an existing zipped archive.
-- Use `Gzip`, `Bzip2`, `Xz` and `Lzip` to pack files & folders into a `TAR` archive.
+- Use `Gzip`, `Bzip2`, `Xz`, `Z` and `Lzip` to pack files & folders into a `TAR` or `Cpio` archive.
 - Supports `LZMA`, `LZMA2` or `Bzip2`  compression & optional encryption to create `7z` archives.
+- [Track progress of compression](https://docs.aspose.com/zip/net/reporting-compression-progress/).
 - Create self-extracting compressed archives.
 
 ## Compress Files As
 
-**Compression:** Zip, Tar, GZip, Bz2, Xz, Lzip, 7z
+**Compression:** Zip, Tar, Cpio, GZip, Bz2, Z, Xz, Lzip, 7z
 
 ## Read Archives
 
-**Decompression:** Zip, Rar, Tar, GZip, Bz2, Xz, Lzip
+**Decompression:** Zip, Rar, Cab, Tar, Cpio, GZip, Bz2, Z, Xz, Lzip
 
 ## Platform Independence
 
@@ -57,7 +58,7 @@ using (var archive = new Archive())
 ```csharp
 using (var archive = new Archive("input_archive.zip"))
 {
-   archive.ExtractToDirectory("\\outputDirectory");
+   archive.ExtractToDirectory("outputDirectory");
 }
 ```
  
@@ -72,8 +73,8 @@ using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new Sev
 ```
 ------------
 ##### [Demos](https://products.aspose.app/zip/family):
-- [Zip-File](https://products.aspose.app/zip/zip-file)
-- [Unzip-File](https://products.aspose.app/zip/unzip-file)
+- [Zip-File](https://products.aspose.app/zip/compression)
+- [Unzip-File](https://products.aspose.app/zip/extract)
 - [Conversion](https://products.aspose.app/zip/conversion)
 - [Merger](https://products.aspose.app/zip/merger)
 ------------
