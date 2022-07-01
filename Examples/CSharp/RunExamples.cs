@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Aspose.ZIP.Examples.RarExtraction;
 
 namespace Aspose.ZIP.Examples
 {
@@ -20,7 +21,7 @@ namespace Aspose.ZIP.Examples
             //License lic = new License();
             //lic.SetLicense(@"Aspose.Total.NET.lic");
 
-            #region Cmopressing and Decompressing Files
+            #region Compressing and Decompressing Files
             //CompressSingleFile.Run();
             //CompressMultipleFiles.Run();
             //CompressFilesByFileInfo.Run();
@@ -33,7 +34,7 @@ namespace Aspose.ZIP.Examples
             //ModifyingZipFile.Run();
             #endregion
 
-            #region Cmpressing and Decompressing Folders
+            #region Compressing and Decompressing Folders
             //CompressDirectory.Run();
             //DecompressFolder.Run();
             #endregion
@@ -54,6 +55,12 @@ namespace Aspose.ZIP.Examples
             //SaveToStream.Run();
             #endregion
 
+            #region Rar extraction
+            //DecompressRarEntry.Run();
+            //DecompressRarArchive.Run();
+            //DecryptRarArchive.Run();
+            #endregion
+            
             Console.WriteLine("Done with executing selected example (s)");
             Console.ReadKey();
         }

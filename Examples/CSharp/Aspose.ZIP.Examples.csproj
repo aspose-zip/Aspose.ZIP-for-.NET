@@ -35,8 +35,8 @@
     <StartupObject>Aspose.ZIP.Examples.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Zip, Version=20.9.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Zip.20.9.1\lib\net40\Aspose.Zip.dll</HintPath>
+    <Reference Include="Aspose.Zip, Version=22.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Zip.22.6.0\lib\net40\Aspose.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -71,6 +71,9 @@
     <Compile Include="CompressingAndDecompressingFolders\CompressDirectory.cs" />
     <Compile Include="CompressingAndDecompressingFolders\DecompressFolder.cs" />
     <Compile Include="CompressingAndDecompressingFolders\ExtractArchiveWithEntriesHavingDifferentPasswords.cs" />
+    <Compile Include="RarExtraction\DecompressRarArchive.cs" />
+    <Compile Include="RarExtraction\DecompressRarEntry.cs" />
+    <Compile Include="RarExtraction\DecryptRarArchive.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorkingWithGZip\CompressFile.cs" />
@@ -97,6 +100,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
