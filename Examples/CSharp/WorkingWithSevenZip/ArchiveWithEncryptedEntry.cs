@@ -23,9 +23,7 @@ namespace Aspose.ZIP.Examples.WorkingWithSevenZip
                 {
                     archive.CreateEntry("entry1.bin", 
                         new MemoryStream(new byte[] { 0x00, 0xFF }), 
-                        new SevenZipEntrySettings(new SevenZipLZMACompressionSettings(), 
-                        new SevenZipAESEncryptionSettings("test1")), 
-                        new FileInfo("data1.bin"));
+                        new SevenZipEntrySettings(new SevenZipLZMACompressionSettings(), new SevenZipAESEncryptionSettings("test1")));
                     archive.Save(sevenZipFile);
                 }
             }
