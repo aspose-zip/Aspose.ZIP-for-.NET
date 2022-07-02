@@ -97,6 +97,7 @@
     <Compile Include="WorkingWithSevenZip\CreateSevenZipEntry.cs" />
     <Compile Include="WorkingWithSevenZip\EntriesWithDifferentPasswords.cs" />
     <Compile Include="WorkingWithSevenZip\SevenZipWithVariousCompressionMethods.cs" />
+    <Compile Include="WorkingWithWim\DecompressWimToFolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
