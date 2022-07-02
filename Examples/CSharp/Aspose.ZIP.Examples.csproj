@@ -76,6 +76,7 @@
     <Compile Include="RarExtraction\DecryptRarArchive.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkingWithCab\DecompressToFolder.cs" />
     <Compile Include="WorkingWithGZip\CompressFile.cs" />
     <Compile Include="WorkingWithGZip\ExtractToMemoryStream.cs" />
     <Compile Include="WorkingWithGZip\OpenGZipArchive.cs" />

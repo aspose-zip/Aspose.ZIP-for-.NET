@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.ZIP.Examples.RarExtraction;
+using Aspose.ZIP.Examples.WorkingWithCab;
 
 namespace Aspose.ZIP.Examples
 {
@@ -59,6 +60,10 @@ namespace Aspose.ZIP.Examples
             //DecompressRarEntry.Run();
             //DecompressRarArchive.Run();
             //DecryptRarArchive.Run();
+            #endregion
+            
+            #region Work with Cab
+            //DecompressCabToFolder.Run();
             #endregion
             
             Console.WriteLine("Done with executing selected example (s)");
