@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.ZIP.Examples.RarExtraction;
 using Aspose.ZIP.Examples.WorkingWithCab;
+using Aspose.ZIP.Examples.WorkingWithZArchives;
 
 namespace Aspose.ZIP.Examples
 {
@@ -64,6 +65,11 @@ namespace Aspose.ZIP.Examples
             
             #region Work with Cab
             //DecompressCabToFolder.Run();
+            #endregion
+            
+            #region Work with Z archives
+            //CompressZFile.Run();
+            //DecompressZFile.Run();
             #endregion
             
             Console.WriteLine("Done with executing selected example (s)");

@@ -99,6 +99,8 @@
     <Compile Include="WorkingWithSevenZip\SevenZipWithVariousCompressionMethods.cs" />
     <Compile Include="WorkingWithWim\DecompressWimToFolder.cs" />
     <Compile Include="WorkingWithXar\DecompressXarToFolder.cs" />
+    <Compile Include="WorkingWithZArchives\CompressFile.cs" />
+    <Compile Include="WorkingWithZArchives\DecompressFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
