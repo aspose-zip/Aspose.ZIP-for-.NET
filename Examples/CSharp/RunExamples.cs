@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using Aspose.ZIP.Examples.RarExtraction;
 using Aspose.ZIP.Examples.WorkingWithCab;
 using Aspose.ZIP.Examples.WorkingWithZArchives;
+using Aspose.ZIP.Examples.WorkingWithXzArchives;
+using Aspose.ZIP.Examples.WorkingWithLzArchives;
 
 namespace Aspose.ZIP.Examples
 {
@@ -72,6 +74,15 @@ namespace Aspose.ZIP.Examples
             //DecompressZFile.Run();
             #endregion
             
+            #region Work with Xz archives
+            //CompressXzFile.Run();
+            //DecompressXzFile.Run();
+            #endregion
+            
+            #region Work With Lz archives
+            //CompressLzFile.Run();
+            //DecompressLzFile.Run();
+            #endregion
             Console.WriteLine("Done with executing selected example (s)");
             Console.ReadKey();
         }

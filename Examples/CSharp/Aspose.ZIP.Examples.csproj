@@ -81,6 +81,8 @@
     <Compile Include="WorkingWithGZip\ExtractToMemoryStream.cs" />
     <Compile Include="WorkingWithGZip\OpenGZipArchive.cs" />
     <Compile Include="WorkingWithGZip\SaveToStream.cs" />
+    <Compile Include="WorkingWithLzArchives\CompressFile.cs" />
+    <Compile Include="WorkingWithLzArchives\DecompressFile.cs" />
     <Compile Include="WorkingWithPasswordProtectedArchives\CompressFilesWithIndividualPasswords.cs" />
     <Compile Include="WorkingWithPasswordProtectedArchives\CompressMultipleFilesWithTraditionalEncryption.cs" />
     <Compile Include="WorkingWithPasswordProtectedArchives\PasswordPrtoectArchiveWithTraditionalPassword.cs" />
@@ -99,6 +101,8 @@
     <Compile Include="WorkingWithSevenZip\SevenZipWithVariousCompressionMethods.cs" />
     <Compile Include="WorkingWithWim\DecompressWimToFolder.cs" />
     <Compile Include="WorkingWithXar\DecompressXarToFolder.cs" />
+    <Compile Include="WorkingWithXzArchives\CompressFile.cs" />
+    <Compile Include="WorkingWithXzArchives\DecompressFile.cs" />
     <Compile Include="WorkingWithZArchives\CompressFile.cs" />
     <Compile Include="WorkingWithZArchives\DecompressFile.cs" />
   </ItemGroup>
