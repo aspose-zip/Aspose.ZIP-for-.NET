@@ -11,10 +11,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.ZIP.Examples.RarExtraction;
 using Aspose.ZIP.Examples.WorkingWithCab;
+using Aspose.ZIP.Examples.WorkingWithCpio;
 using Aspose.ZIP.Examples.WorkingWithZArchives;
 using Aspose.ZIP.Examples.WorkingWithXzArchives;
 using Aspose.ZIP.Examples.WorkingWithLzArchives;
-
+using Aspose.ZIP.Examples.CompressToTarXX;
 namespace Aspose.ZIP.Examples
 {
     class RunExamples
@@ -83,6 +84,19 @@ namespace Aspose.ZIP.Examples
             //CompressLzFile.Run();
             //DecompressLzFile.Run();
             #endregion
+            
+            #region Work with Cpio
+            //CompressCpioFile.Run();
+            #endregion
+            
+            #region Compress to tar.xx
+            //CompressToTarBz2.Run();
+            //CompressToTarGz.Run();
+            //CompressToTarLz.Run();
+            //CompressToTarXz.Run();
+            //CompressToTarZ.Run();
+            #endregion
+            
             Console.WriteLine("Done with executing selected example (s)");
             Console.ReadKey();
         }
