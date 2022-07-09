@@ -16,6 +16,7 @@ using Aspose.ZIP.Examples.WorkingWithZArchives;
 using Aspose.ZIP.Examples.WorkingWithXzArchives;
 using Aspose.ZIP.Examples.WorkingWithLzArchives;
 using Aspose.ZIP.Examples.CompressToTarXX;
+using  Aspose.ZIP.Examples.WorkWithLzma;
 namespace Aspose.ZIP.Examples
 {
     class RunExamples
@@ -95,6 +96,11 @@ namespace Aspose.ZIP.Examples
             //CompressToTarLz.Run();
             //CompressToTarXz.Run();
             //CompressToTarZ.Run();
+            #endregion
+
+            #region Work with Lzma archves
+            //CompressToLzma.Run();
+            //DecompressFromLzma.Run();
             #endregion
             
             Console.WriteLine("Done with executing selected example (s)");

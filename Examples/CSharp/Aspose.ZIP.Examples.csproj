@@ -111,6 +111,8 @@
     <Compile Include="WorkingWithXzArchives\DecompressFile.cs" />
     <Compile Include="WorkingWithZArchives\CompressFile.cs" />
     <Compile Include="WorkingWithZArchives\DecompressFile.cs" />
+    <Compile Include="WorkWithLzma\CompressToLzma.cs" />
+    <Compile Include="WorkWithLzma\DecompressFromLzma.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
