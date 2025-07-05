@@ -123,7 +123,7 @@ namespace Aspose.ZIP.Examples
             {
                 startDirectory = parent.FullName;
             }
-            return startDirectory != null ? Path.Combine(startDirectory, "Data\\") : null;
+            return startDirectory != null ? Path.Combine(startDirectory, "Data" + Path.DirectorySeparatorChar) : null;
         }
     }
 }
