@@ -17,23 +17,24 @@ Directory | Description
 
 # Compress & Extract Files via .NET
 
-- [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP format using Deflate, Bzip2, LZMA or PPMd compression algorithm.
+- [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP format using Deflate, Bzip2, LZMA, PPMd, Xz or Zstandard compression algorithm.
 - Extract RAR4 and RAR5 archives, with and without encryption.
 - [Apply simple password or `AES128`, `AES192`, `AES256` encryption to archives](https://docs.aspose.com/zip/net/password-protecting-archives/).
 - Employ different protection scheme to each file within an archive.
 - Append more files to an existing zipped archive.
-- Use `Gzip`, `Bzip2`, `Xz`, `Z` and `Lzip` to pack files & folders into a `TAR` or `Cpio` archive.
-- Supports `LZMA`, `LZMA2` or `Bzip2`  compression & optional encryption to create `7z` archives.
+- Use `Gzip`, `Bzip2`, `LZMA`, `LZ4`, `Lzip`, `Xz`, `Z` and `Zstandard` to pack files & folders into a `TAR` or `Cpio` archive.
+- Supports `LZMA`, `LZMA2`, `PPMd` or `Bzip2`  compression & optional encryption to create `7z` archives.
 - [Track progress of compression](https://docs.aspose.com/zip/net/reporting-compression-progress/).
+- Cancel archive extraction with cancellation token.
 - Create self-extracting compressed archives.
 
 ## Compress Files As
 
-**Compression:** Zip, Tar, Cpio, GZip, Bz2, Z, Xz, Lzip, 7z
+**Compression:** Zip, Tar, Cpio, GZip, Bz2, Iso, Lzip, LZMA, Xar, Xz, Z, Zstandard, 7z
 
 ## Read Archives
 
-**Decompression:** Zip, Rar, Cab, Tar, Cpio, GZip, Bz2, Z, Xz, Lzip
+**Decompression:** Zip, Rar, Cab, Tar, Cpio, GZip, Bz2, Z, Xar, Xz, Lzip, Arj, Lha, Wim, Zstandard
 
 ## Platform Independence
 
