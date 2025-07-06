@@ -10,7 +10,7 @@ namespace Aspose.ZIP.Examples.WorkingWithXzArchives
         {
             string dataDir = RunExamples.GetDataDir_Data();
 
-            //ExStart: OpenGZipArchive
+            //ExStart: OpenXzArchive
             //Extracts the archive and copies extracted content to file stream.
             using (var archive = new XzArchive(dataDir + "archive.xz"))
             {
@@ -19,7 +19,7 @@ namespace Aspose.ZIP.Examples.WorkingWithXzArchives
                     archive.Extract(extracted);
                 }
             }
-            //ExEnd: OpenGZipArchive
+            //ExEnd: OpenXzArchive
             Console.WriteLine("Successfully Opened xz Archive");
         }
     }
