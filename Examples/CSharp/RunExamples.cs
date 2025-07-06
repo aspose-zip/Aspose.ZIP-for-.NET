@@ -100,18 +100,22 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region Work with Lzma archves
-            CompressToLzma.Run();
+            //CompressToLzma.Run();
             //DecompressFromLzma.Run();
             #endregion
 
             #region Work with Lz4 archves
-            CompressToLz4.Run();
+            //CompressToLz4.Run();
             //DecompressFromLz4.Run();
             #endregion
             
             #region Cancellation
             //CancelXzExtraction.Run();
             //CancelXzExtractionTask.Run();
+            //CancelGzipExtraction.Run();
+            //CancelGzipExtractionTask.Run();
+            //CancelRarExtraction.Run();
+            //CancelRarExtractionTask.Run();
             #endregion
 
             Console.WriteLine("Done with executing selected example (s)");

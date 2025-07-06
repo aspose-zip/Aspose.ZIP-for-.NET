@@ -4,9 +4,9 @@
     <OutputType>Exe</OutputType>
     <StartupObject>Aspose.ZIP.Examples.RunExamples</StartupObject>
     <AssemblyTitle>Aspose.ZIP.Examples</AssemblyTitle>
-    <Company>Microsoft</Company>
+    <Company>Aspose</Company>
     <Product>Aspose.ZIP.Examples</Product>
-    <Copyright>Copyright © Microsoft 2018</Copyright>
+    <Copyright>Copyright © Aspose 2018</Copyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
