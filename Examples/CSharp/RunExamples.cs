@@ -105,11 +105,12 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region Cancellation
-            CancelXzExtraction.Run();
+            //CancelXzExtraction.Run();
+            //CancelXzExtractionTask.Run();
             #endregion
 
             Console.WriteLine("Done with executing selected example (s)");
-           // Console.ReadKey();
+            Console.ReadKey();
         }
 
         public static string GetDataDir_Data()

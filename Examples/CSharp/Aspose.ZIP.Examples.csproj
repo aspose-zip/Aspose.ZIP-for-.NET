@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CancelWithToken\CancelXzExtraction.cs" />
+    <Compile Include="CancelWithToken\CancelXzExtractionTask.cs" />
     <Compile Include="CompressingAndDecompressingFiles\CompressFilesByFileInfo.cs" />
     <Compile Include="CompressingAndDecompressingFiles\CompressionSettings.cs" />
     <Compile Include="CompressingAndDecompressingFiles\CompressMultipleFiles.cs" />
