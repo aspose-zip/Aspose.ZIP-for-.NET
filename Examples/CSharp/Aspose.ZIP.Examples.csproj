@@ -90,6 +90,8 @@
     <Compile Include="WorkingWithGZip\ExtractToMemoryStream.cs" />
     <Compile Include="WorkingWithGZip\OpenGZipArchive.cs" />
     <Compile Include="WorkingWithGZip\SaveToStream.cs" />
+    <Compile Include="WorkingWithLz4\CompressToLz4.cs" />
+    <Compile Include="WorkingWithLz4\DecompressFromLz4.cs" />
     <Compile Include="WorkingWithLzArchives\CompressFile.cs" />
     <Compile Include="WorkingWithLzArchives\DecompressFile.cs" />
     <Compile Include="WorkingWithPasswordProtectedArchives\CompressFilesWithIndividualPasswords.cs" />

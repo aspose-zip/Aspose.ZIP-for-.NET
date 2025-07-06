@@ -104,6 +104,11 @@ namespace Aspose.ZIP.Examples
             //DecompressFromLzma.Run();
             #endregion
 
+            #region Work with Lz4 archves
+            //CompressToLz4.Run();
+            //DecompressFromLz4.Run();
+            #endregion
+            
             #region Cancellation
             //CancelXzExtraction.Run();
             //CancelXzExtractionTask.Run();
