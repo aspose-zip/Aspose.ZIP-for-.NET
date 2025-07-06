@@ -20,6 +20,8 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Aspose.ZIP.Examples
 {
+    using Aspose.ZIP.Examples.FormatDetection;
+
     class RunExamples
     {
         static void Main(string[] args)
@@ -154,6 +156,11 @@ namespace Aspose.ZIP.Examples
             // CancelZStandardExtractionTask.Run();
             #endregion
 
+            #region Format Detection
+            //DetectFormat.Run();
+            //ExtractDetecting.Run();
+            #endregion
+            
             Console.WriteLine("Done with executing selected example (s)");
             Console.ReadKey();
         }

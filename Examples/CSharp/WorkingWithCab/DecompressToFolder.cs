@@ -10,7 +10,7 @@ namespace Aspose.ZIP.Examples.WorkingWithCab
             string dataDir = RunExamples.GetDataDir_Data();
 
             //ExStart: DecompressCabArchive
-            using (FileStream fs = File.OpenRead(dataDir + "corpus.cab"))
+            using (FileStream fs = File.OpenRead(dataDir + "archive.cab"))
             {
                 using (CabArchive archive = new CabArchive(fs))
                 {
