@@ -110,12 +110,35 @@ namespace Aspose.ZIP.Examples
             #endregion
             
             #region Cancellation
-            //CancelXzExtraction.Run();
-            //CancelXzExtractionTask.Run();
-            //CancelGzipExtraction.Run();
-            //CancelGzipExtractionTask.Run();
-            //CancelRarExtraction.Run();
-            //CancelRarExtractionTask.Run();
+            // CancelArjExtraction.Run();
+            // CancelArjExtractionTask.Run();
+            // CancelBzip2Extraction.Run();
+            // CancelBzip2ExtractionTask.Run();
+            // CancelCabExtraction.Run();
+            // CancelCabExtractionTask.Run();
+            // CancelGzipExtraction.Run();
+            // CancelGzipExtractionTask.Run();
+            // CancelIsoExtraction.Run();
+            // CancelIsoExtractionTask.Run();
+            // CancelLhaExtraction.Run();
+            // CancelLhaExtractionTask.Run();
+            // CancelLz4Extraction.Run();
+            // CancelLz4ExtractionTask.Run();
+            // CancelLzipExtracton.Run();
+            // CancelRarExtraction.Run();
+            // CancelRarExtractionTask.Run();
+            // CancelSevenZipExtraction.Run();
+            // CancelSevenZipExtractionTask.Run();
+            // CancelWimExtraction.Run();
+            // CancelWimExtractionTask.Run();
+            // CancelXarExtraction.Run();
+            // CancelXarExtractionTask.Run();
+            // CancelXzExtraction.Run();
+            // CancelXzExtractionTask.Run();
+            // CancelZipExtraction.Run();
+            // CancelZipExtractionTask.Run();
+            // CancelZStandardExtraction.Run();
+            // CancelZStandardExtractionTask.Run();
             #endregion
 
             Console.WriteLine("Done with executing selected example (s)");
