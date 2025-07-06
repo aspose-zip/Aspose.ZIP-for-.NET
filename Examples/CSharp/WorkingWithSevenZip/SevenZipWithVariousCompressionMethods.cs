@@ -26,6 +26,13 @@ namespace Aspose.ZIP.Examples.WorkingWithSevenZip
                 archive.Save("SevenZip_bzip2.7z");
             }
             
+            //PPMd
+            using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(new SevenZipPPMdCompressionSettings())))
+            {
+                archive.CreateEntries(dataDir);
+                archive.Save("SevenZip_ppmd.7z");
+            }
+            
             //Store, no compression
             using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(new SevenZipStoreCompressionSettings())))
             {

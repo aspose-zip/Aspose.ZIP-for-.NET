@@ -90,6 +90,18 @@ namespace Aspose.ZIP.Examples
             #region Work with Cpio
             //CompressCpioFile.Run();
             #endregion
+            
+            #region Work with Iso
+            //DecompressIsoToFolder.Run();
+            #endregion
+            
+            #region Work with Lha
+            //DecompressLhaToFolder.Run();
+            #endregion
+            
+            #region Work with Lha
+            //DecompressArjToFolder.Run();
+            #endregion
 
             #region Compress to tar.xx
             //CompressToTarBz2.Run();
@@ -97,6 +109,7 @@ namespace Aspose.ZIP.Examples
             //CompressToTarLz.Run();
             //CompressToTarXz.Run();
             //CompressToTarZ.Run();
+            //CompressToTarZstd.Run();
             #endregion
 
             #region Work with Lzma archves

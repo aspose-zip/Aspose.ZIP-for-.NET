@@ -1,12 +1,7 @@
-﻿using Aspose.Zip;
-using Aspose.Zip.Saving;
+﻿using Aspose.Zip.Saving;
 using Aspose.Zip.SevenZip;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aspose.ZIP.Examples.WorkingWithSevenZip
 {
