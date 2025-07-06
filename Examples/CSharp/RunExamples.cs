@@ -100,12 +100,12 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region Work with Lzma archves
-            //CompressToLzma.Run();
+            CompressToLzma.Run();
             //DecompressFromLzma.Run();
             #endregion
 
             #region Work with Lz4 archves
-            //CompressToLz4.Run();
+            CompressToLz4.Run();
             //DecompressFromLz4.Run();
             #endregion
             
@@ -120,7 +120,7 @@ namespace Aspose.ZIP.Examples
 
         public static string GetDataDir_Data()
         {
-            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+            DirectoryInfo parent = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).Parent;
             string startDirectory = null;
             if (parent != null)
             {
