@@ -16,17 +16,24 @@ namespace Aspose.ZIP.Examples.CancelWithToken
             //Extracts the archive and copies extracted content to file stream.
             
             CancellationTokenSource cts = new CancellationTokenSource();
-            cts.CancelAfter(5); //Cancel soon
+            cts.CancelAfter(500); //Cancel soon
             XzLoadOptions loadOptions = new XzLoadOptions() {CancellationToken = cts.Token};
             using (var archive = new XzArchive(dataDir + "archive.xz", loadOptions))
             {
                 using (var extracted = File.Create(dataDir + "alice29_out.txt"))
                 {
-                    archive.Extract(extracted);
+                    try
+                    {
+                        archive.Extract(extracted);
+                    }
+                    catch (OperationCanceledException) 
+                    {
+                        Console.WriteLine("Successfully cancelled xz Archive extraction");
+                    }
                 }
             }
+            
             //ExEnd: OpenXzArchive
-            Console.WriteLine("Successfully Opened xz Archive");
         }
     }
 }

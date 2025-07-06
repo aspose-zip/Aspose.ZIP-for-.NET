@@ -1,22 +1,23 @@
 ﻿using Aspose.Zip;
+using Aspose.ZIP.Examples.CancelWithToken;
 using Aspose.ZIP.Examples.CompressingAndDecompressingFiles;
 using Aspose.ZIP.Examples.CompressingAndDecompressingFolders;
+using Aspose.ZIP.Examples.CompressToTarXX;
+using Aspose.ZIP.Examples.RarExtraction;
+using Aspose.ZIP.Examples.WorkingWithCab;
+using Aspose.ZIP.Examples.WorkingWithCpio;
 using Aspose.ZIP.Examples.WorkingWithGZip;
+using Aspose.ZIP.Examples.WorkingWithLzArchives;
 using Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives;
+using Aspose.ZIP.Examples.WorkingWithXzArchives;
+using Aspose.ZIP.Examples.WorkingWithZArchives;
+using  Aspose.ZIP.Examples.WorkWithLzma;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Aspose.ZIP.Examples.RarExtraction;
-using Aspose.ZIP.Examples.WorkingWithCab;
-using Aspose.ZIP.Examples.WorkingWithCpio;
-using Aspose.ZIP.Examples.WorkingWithZArchives;
-using Aspose.ZIP.Examples.WorkingWithXzArchives;
-using Aspose.ZIP.Examples.WorkingWithLzArchives;
-using Aspose.ZIP.Examples.CompressToTarXX;
-using  Aspose.ZIP.Examples.WorkWithLzma;
 namespace Aspose.ZIP.Examples
 {
     class RunExamples
@@ -32,7 +33,7 @@ namespace Aspose.ZIP.Examples
             //CompressMultipleFiles.Run();
             //CompressFilesByFileInfo.Run();
             //StoreMultipleFilesWithoutCompression.Run();
-            DecompressSingleFile.Run();
+            //DecompressSingleFile.Run();
             //DecompressMultipleFiles.Run();
             //DecompressStoredFile.Run();
             //UsingParallelismToCompressFiles.Run();
@@ -66,30 +67,30 @@ namespace Aspose.ZIP.Examples
             //DecompressRarArchive.Run();
             //DecryptRarArchive.Run();
             #endregion
-            
+
             #region Work with Cab
             //DecompressCabToFolder.Run();
             #endregion
-            
+
             #region Work with Z archives
             //CompressZFile.Run();
             //DecompressZFile.Run();
             #endregion
-            
+
             #region Work with Xz archives
             //CompressXzFile.Run();
             //DecompressXzFile.Run();
             #endregion
-            
+
             #region Work With Lz archives
             //CompressLzFile.Run();
             //DecompressLzFile.Run();
             #endregion
-            
+
             #region Work with Cpio
             //CompressCpioFile.Run();
             #endregion
-            
+
             #region Compress to tar.xx
             //CompressToTarBz2.Run();
             //CompressToTarGz.Run();
@@ -102,9 +103,13 @@ namespace Aspose.ZIP.Examples
             //CompressToLzma.Run();
             //DecompressFromLzma.Run();
             #endregion
-            
+
+            #region Cancellation
+            CancelXzExtraction.Run();
+            #endregion
+
             Console.WriteLine("Done with executing selected example (s)");
-            Console.ReadKey();
+           // Console.ReadKey();
         }
 
         public static string GetDataDir_Data()
