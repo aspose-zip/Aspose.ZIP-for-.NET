@@ -17,7 +17,7 @@ namespace Aspose.ZIP.Examples.WorkingWithXzArchives
                 archive.Save(dataDir + "archive.xz");
             }
             //ExEnd: CompressFile
-            Console.WriteLine("Successfully Compressed a File");
+            Console.WriteLine("Successfully Compressed a xz file");
         }
     }
 }

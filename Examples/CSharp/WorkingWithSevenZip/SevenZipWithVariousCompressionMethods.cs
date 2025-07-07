@@ -19,11 +19,25 @@ namespace Aspose.ZIP.Examples.WorkingWithSevenZip
                 archive.Save("SevenZip_lzma2.7z");
             }
             
+            //LZMA
+            using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(new SevenZipLZMACompressionSettings())))
+            {
+                archive.CreateEntries(dataDir);
+                archive.Save("SevenZip_lzma.7z");
+            }
+            
             //BZip2
             using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(new SevenZipBZip2CompressionSettings())))
             {
                 archive.CreateEntries(dataDir);
                 archive.Save("SevenZip_bzip2.7z");
+            }
+            
+            //PPMd
+            using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(new SevenZipPPMdCompressionSettings())))
+            {
+                archive.CreateEntries(dataDir);
+                archive.Save("SevenZip_ppmd.7z");
             }
             
             //Store, no compression

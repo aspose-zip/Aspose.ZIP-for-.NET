@@ -20,6 +20,9 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Aspose.ZIP.Examples
 {
+    using Aspose.ZIP.Examples.EventHandling;
+    using Aspose.ZIP.Examples.FormatDetection;
+
     class RunExamples
     {
         static void Main(string[] args)
@@ -88,7 +91,24 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region Work with Cpio
-            //CompressCpioFile.Run();
+            // CompressCpioFile.Run();
+            // CompressToCpioXz.Run();
+            // CompressToCpioLz.Run();
+            // CompressToCpioZ.Run();
+            // CompressToCpioBz2.Run();
+            // CompressToCpioGz.Run();
+            #endregion
+            
+            #region Work with Iso
+            //DecompressIsoToFolder.Run();
+            #endregion
+            
+            #region Work with Lha
+            //DecompressLhaToFolder.Run();
+            #endregion
+            
+            #region Work with Lha
+            //DecompressArjToFolder.Run();
             #endregion
 
             #region Compress to tar.xx
@@ -97,6 +117,7 @@ namespace Aspose.ZIP.Examples
             //CompressToTarLz.Run();
             //CompressToTarXz.Run();
             //CompressToTarZ.Run();
+            //CompressToTarZstd.Run();
             #endregion
 
             #region Work with Lzma archves
@@ -141,6 +162,16 @@ namespace Aspose.ZIP.Examples
             // CancelZStandardExtractionTask.Run();
             #endregion
 
+            #region Format Detection
+            //DetectFormat.Run();
+            //ExtractDetecting.Run();
+            #endregion
+            
+            #region Progress reporting
+            //CompressionProgressReport.Run();
+            //ExtractionProgressReport.Run();
+            #endregion
+            
             Console.WriteLine("Done with executing selected example (s)");
             Console.ReadKey();
         }
