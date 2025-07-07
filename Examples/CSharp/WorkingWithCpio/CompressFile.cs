@@ -16,7 +16,7 @@ namespace Aspose.ZIP.Examples.WorkingWithCpio
                 archive.Save(dataDir + "archive.cpio");
             }
             //ExEnd: CompressFile
-            Console.WriteLine("Successfully Compressed Files");
+            Console.WriteLine("Successfully Compressed cpio Files");
         }
     }
 }

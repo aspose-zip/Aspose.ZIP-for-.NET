@@ -19,6 +19,8 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
             UsingPPMdCompressionSettings(dataDir);
             UsingEnhancedDeflateCompressionSettings(dataDir);
             UsingStoreCompressionSettings(dataDir);
+            UsingXzCompressionSettings(dataDir);
+            UsingZstandardCompressionSettings(dataDir);
         }
 
         public static void UsingBzip2CompressionSettings(string dataDir)
@@ -89,6 +91,34 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
                 }
             }
             //ExEnd: UsingStoreCompressionSettings
+        }
+        
+        public static void UsingXzCompressionSettings(string dataDir)
+        {
+            //ExStart: UsingXzCompressionSettings
+            using (FileStream zipFile = File.Open(dataDir + "XzCompression_out.zip", FileMode.Create))
+            {
+                using (Archive archive = new Archive(new ArchiveEntrySettings(new XzCompressionSettings())))
+                {
+                    archive.CreateEntry("sample.txt", dataDir + "sample.txt");
+                    archive.Save(zipFile);
+                }
+            }
+            //ExEnd: UsingXzCompressionSettings
+        }
+        
+        public static void UsingZstandardCompressionSettings(string dataDir)
+        {
+            //ExStart: UsingZstandardCompressionSettings
+            using (FileStream zipFile = File.Open(dataDir + "ZstandardCompression_out.zip", FileMode.Create))
+            {
+                using (Archive archive = new Archive(new ArchiveEntrySettings(new ZstandardCompressionSettings())))
+                {
+                    archive.CreateEntry("sample.txt", dataDir + "sample.txt");
+                    archive.Save(zipFile);
+                }
+            }
+            //ExEnd: UsingZstandardCompressionSettings
         }
     }
 }

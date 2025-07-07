@@ -91,7 +91,12 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region Work with Cpio
-            //CompressCpioFile.Run();
+            // CompressCpioFile.Run();
+            // CompressToCpioXz.Run();
+            // CompressToCpioLz.Run();
+            // CompressToCpioZ.Run();
+            // CompressToCpioBz2.Run();
+            // CompressToCpioGz.Run();
             #endregion
             
             #region Work with Iso

@@ -1,5 +1,6 @@
 namespace Aspose.ZIP.Examples.WorkingWithIso;
 
+using System;
 using System.IO;
 using Aspose.Zip.Iso;
 
@@ -18,5 +19,7 @@ public class DecompressIsoToFolder
             }
         }
         //ExEnd: DecompressIsoArchive
+        
+        Console.WriteLine("Successfully Opened Iso Archive");
     }
 }
