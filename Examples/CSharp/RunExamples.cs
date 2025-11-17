@@ -130,6 +130,12 @@ namespace Aspose.ZIP.Examples
             //DecompressFromLz4.Run();
             #endregion
             
+            #region Work With 7z archives
+            // CreateSevenZipEntries.Run();
+            // CreateSolidSevenZipArchive.Run();
+            // CreateSolidEncryptedSevenZipArchive.Run();
+            #endregion
+            
             #region Cancellation
             // CancelArjExtraction.Run();
             // CancelArjExtractionTask.Run();
