@@ -97,6 +97,8 @@ namespace Aspose.ZIP.Examples
             // CompressToCpioZ.Run();
             // CompressToCpioBz2.Run();
             // CompressToCpioGz.Run();
+            // CompressToCpioLzma.Run();
+            // CompressToCpioZstd.Run();
             #endregion
             
             #region Work with Iso
@@ -117,6 +119,7 @@ namespace Aspose.ZIP.Examples
             //CompressToTarLz.Run();
             //CompressToTarXz.Run();
             //CompressToTarZ.Run();
+            //CompressToTarLzma.Run();
             //CompressToTarZstd.Run();
             #endregion
 
