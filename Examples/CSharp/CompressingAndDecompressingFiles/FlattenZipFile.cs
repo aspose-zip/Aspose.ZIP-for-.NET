@@ -2,17 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
 {
-    class ModifyingZipFile
+    class FlattenZipFile
     {
         public static void Run()
         {
-            //ExStart: ModifyingZipFile
+            //ExStart: FlattenZipFile
             string dataDir = RunExamples.GetDataDir_Data();
             
             using (Archive outer = new Archive(dataDir + "outer.zip"))
@@ -27,25 +24,27 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
                     if (entry.Name.EndsWith(".zip", StringComparison.InvariantCultureIgnoreCase) /* or another condition */ ) 
                     {
                         // Keep reference to the entry in order to remove it from the archive later
-                        entriesToDelete.Add(entry); 
-                        MemoryStream innerCompressed = new MemoryStream();
-
-                        //This extracts the entry to a memory stream
-                        entry.Open().CopyTo(innerCompressed);
-
-                        // We know that content of the entry is an zip archive so we may extract
-                        using (Archive inner = new Archive(innerCompressed)) 
+                        entriesToDelete.Add(entry);
+                        using (MemoryStream innerCompressed = new MemoryStream())
                         {
-                            // Loop over entries of inner archive
-                            foreach (ArchiveEntry ie in inner.Entries) 
-                            {
-                                // Keep the name of inner entry.
-                                namesToInsert.Add(ie.Name); 
-                                MemoryStream content = new MemoryStream();
-                                ie.Open().CopyTo(content);
 
-                                // Keep the content of inner entry.
-                                contentToInsert.Add(content); 
+                            //This extracts the entry to a memory stream
+                            entry.Open().CopyTo(innerCompressed);
+
+                            // We know that content of the entry is an zip archive so we may extract
+                            using (Archive inner = new Archive(innerCompressed))
+                            {
+                                // Loop over entries of inner archive
+                                foreach (ArchiveEntry ie in inner.Entries)
+                                {
+                                    // Keep the name of inner entry.
+                                    namesToInsert.Add(ie.Name);
+                                    MemoryStream content = new MemoryStream();
+                                    ie.Open().CopyTo(content);
+
+                                    // Keep the content of inner entry.
+                                    contentToInsert.Add(content);
+                                }
                             }
                         }
                     }
@@ -65,7 +64,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
 
                 outer.Save(dataDir + "flatten.zip");
             }
-            //ExEnd: ModifyingZipFile
+            //ExEnd: FlattenZipFile
         }
     }
 }

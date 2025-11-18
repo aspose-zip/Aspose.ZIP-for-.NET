@@ -41,7 +41,7 @@ namespace Aspose.ZIP.Examples
             //DecompressStoredFile.Run();
             //UsingParallelismToCompressFiles.Run();
             //CompressionSettings.Run();
-            //ModifyingZipFile.Run();
+            //FlattenZipFile.Run();
             //CreateSelfExtractingArchive.Run();
             //CreateMultivolumeZip.run();
             #endregion
