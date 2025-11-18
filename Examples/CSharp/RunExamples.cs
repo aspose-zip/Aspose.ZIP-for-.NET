@@ -52,11 +52,11 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region Working with Password Protection of Archives
-            //PasswordPrtoectArchiveWithTraditionalPassword.Run();
+            //PasswordProtectArchiveWithTraditionalPassword.Run();
             //DecompressTraditionallyPasswordProtectedFile.Run();
             //PasswordProtectWithAES.Run();
             //DecompressAESEncryptedFile.Run();
-            //StoreMutlipleFilesWithoutCompressionWithPassword.Run();
+            //StoreMultipleFilesWithoutCompressionWithPassword.Run();
             //DecompressAESEncryptedStoredFile.Run();
             #endregion
 

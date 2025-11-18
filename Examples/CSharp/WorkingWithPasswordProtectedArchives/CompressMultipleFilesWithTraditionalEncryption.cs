@@ -11,7 +11,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
             string dataDir = RunExamples.GetDataDir_Data();
 
             //ExStart: CompressMultipleFilesWithTraditionalEncryption
-            using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
+            using (FileStream zipFile = File.Open("CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
             {
                 FileInfo source1 = new FileInfo(".\\CanterburyCorpus\\alice29.txt");
                 FileInfo source2 = new FileInfo(".\\CanterburyCorpus\\asyoulik.txt");

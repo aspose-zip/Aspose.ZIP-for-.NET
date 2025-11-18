@@ -8,7 +8,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
         public static void Run()
         {
             string dataDir = RunExamples.GetDataDir_Data();
-            PasswordPrtoectArchiveWithTraditionalPassword.Run();    //run password protection a file example to use it later
+            PasswordProtectArchiveWithTraditionalPassword.Run();    //run password protection a file example to use it later
             //ExStart: DecompressTraditionallyPasswordProtectedFile
             using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryption_out.zip"))
             {

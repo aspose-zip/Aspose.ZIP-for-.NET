@@ -9,10 +9,10 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
         {
             string dataDir = RunExamples.GetDataDir_Data();
 
-            StoreMutlipleFilesWithoutCompressionWithPassword.Run();
+            StoreMultipleFilesWithoutCompressionWithPassword.Run();
 
             //ExStart: DecompressAESEncryptedStoredFile
-            using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
+            using (FileStream fs = File.OpenRead(dataDir + "StoreMultipleFilesWithoutCompressionWithPassword_out.zip"))
             {
                 using (var extracted = File.Create(dataDir + "alice_aesextracted_out.txt"))
                 {

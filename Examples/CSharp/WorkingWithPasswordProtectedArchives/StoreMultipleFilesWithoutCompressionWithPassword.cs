@@ -4,14 +4,14 @@ using System.IO;
 
 namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
 {
-    public class StoreMutlipleFilesWithoutCompressionWithPassword
+    public class StoreMultipleFilesWithoutCompressionWithPassword
     {
         public static void Run()
         {
             string dataDir = RunExamples.GetDataDir_Data();
 
-            //ExStart: StoreMutlipleFilesWithoutCompressionWithPassword
-            using (FileStream zipFile = File.Open(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip", FileMode.Create))
+            //ExStart: StoreMultipleFilesWithoutCompressionWithPassword
+            using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompressionWithPassword_out.zip", FileMode.Create))
             {
                 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
                 {
@@ -22,7 +22,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
                     }
                 }
             }
-            //ExEnd: StoreMutlipleFilesWithoutCompressionWithPassword
+            //ExEnd: StoreMultipleFilesWithoutCompressionWithPassword
         }
     }
 }

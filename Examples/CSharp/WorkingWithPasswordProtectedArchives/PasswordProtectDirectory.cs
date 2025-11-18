@@ -9,7 +9,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
         public static void Run()
         {
             //ExStart: PasswordProtectDirectory
-            using (FileStream zipFile = File.Open(".\\all_corpus_encrypted_out.zip", FileMode.Create))
+            using (FileStream zipFile = File.Open("all_corpus_encrypted_out.zip", FileMode.Create))
             {
                 DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus");
                 using (var archive = new Archive(new ArchiveEntrySettings(null, new TraditionalEncryptionSettings("p@s$"))))

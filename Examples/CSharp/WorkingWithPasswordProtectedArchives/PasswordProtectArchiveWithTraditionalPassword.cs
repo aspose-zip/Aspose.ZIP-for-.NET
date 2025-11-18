@@ -4,13 +4,13 @@ using Aspose.Zip.Saving;
 
 namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
 {
-    public class PasswordPrtoectArchiveWithTraditionalPassword
+    public class PasswordProtectArchiveWithTraditionalPassword
     {
         public static void Run()
         {
             string dataDir = RunExamples.GetDataDir_Data();
 
-            //ExStart: PasswordPrtoectArchiveWithTraditionalPassword
+            //ExStart: PasswordProtectArchiveWithTraditionalPassword
             using (FileStream zipFile = File.Open(dataDir + "CompressWithTraditionalEncryption_out.zip", FileMode.Create))
             {
                 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -20,7 +20,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
                     archive.Save(zipFile);
                 }
             }
-            //ExEnd: PasswordPrtoectArchiveWithTraditionalPassword
+            //ExEnd: PasswordProtectArchiveWithTraditionalPassword
         }
     }
 }
