@@ -1,6 +1,7 @@
 
 Temp/
 obj/
+.idea/
 classes/
 generated/
 *.suo
