@@ -44,6 +44,7 @@ namespace Aspose.ZIP.Examples
             //FlattenZipFile.Run();
             //CreateSelfExtractingArchive.Run();
             //CreateMultivolumeZip.run();
+            //AppendZipEntry.Run();
             #endregion
 
             #region Compressing and Decompressing Folders
