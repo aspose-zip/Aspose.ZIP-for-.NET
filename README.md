@@ -2,7 +2,7 @@
 
 # .NET API for Files Compression & Archiving
 
-[Aspose.ZIP for .NET](https://products.aspose.com/zip/net) class library allows your .NET applications to compress/decompress files and folders without getting into the complexity of coding new compression algorithms or understanding the existing ones. Enable your programs to work with a vast range of features, such as, creating archives, saving archives, archive extraction, encrypting/decrypting archives, compressing single or multiple files as well as directory contents. It also allows you to apply security to your archived and compressed files and folders via password using ZipCrypto or AES (128, 192, 256) encryption or mixed encryption.
+[Aspose.ZIP for .NET](https://products.aspose.com/zip/net) class library enables your .NET applications to compress and decompress files and folders without the complexity of implementing or understanding compression algorithms. Enable your programs to work with a vast range of features, such as creating archives, saving archives, archive extraction, encrypting/decrypting archives, compressing single or multiple files as well as entire directories. You can also secure your archived or compressed files and folders with password protection, using ZipCrypto or AES encryption (128-, 192-, or 256-bit), or mixed encryption.
 
 <p align="center">
 <a title="Download complete Aspose.ZIP for .NET source code" href="https://github.com/aspose-zip/Aspose.Zip-for-.NET/archive/master.zip">
@@ -17,15 +17,15 @@ Directory | Description
 
 # Compress & Extract Files via .NET
 
-- [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP format using Deflate, Bzip2, LZMA, PPMd, Xz or Zstandard compression algorithm.
-- Extract RAR4 and RAR5 archives, with and without encryption.
+- [Compress files and folders]((https://docs.aspose.com/zip/net/compressing-and-decompressing-files/)) into standard ZIP format using Deflate, Bzip2, LZMA, PPMd, Xz or Zstandard compression algorithms.
+- Extract RAR4 and RAR5 archives, with or without encryption.
 - [Apply simple password or `AES128`, `AES192`, `AES256` encryption to archives](https://docs.aspose.com/zip/net/password-protecting-archives/).
-- Employ different protection scheme to each file within an archive.
-- Append more files to an existing zipped archive.
-- Use `Gzip`, `Bzip2`, `LZMA`, `LZ4`, `Lzip`, `Xz`, `Z` and `Zstandard` to pack files & folders into a `TAR` or `Cpio` archive.
-- Supports `LZMA`, `LZMA2`, `PPMd` or `Bzip2`  compression & optional encryption to create `7z` archives.
-- [Track progress of compression](https://docs.aspose.com/zip/net/reporting-compression-progress/).
-- Cancel archive extraction with cancellation token.
+- Employ different protection schemes to individual files within an archive.
+- Append files to an existing ZIP archive.
+- Pack files and folders into a `TAR` or `Cpio` archive combining with `Gzip`, `Bzip2`, `LZMA`, `LZ4`, `Lzip`, `Xz`, `Z` and `Zstandard`.
+- Supports `LZMA`, `LZMA2`, `PPMd` or `Bzip2`  compression and optional encryption to create `7z` archives.
+- [Track the progress of compression](https://docs.aspose.com/zip/net/reporting-compression-progress/).
+- Cancel archive extraction with a cancellation token.
 - Create self-extracting compressed archives.
 
 ## Compress Files As
@@ -34,15 +34,15 @@ Directory | Description
 
 ## Read Archives
 
-**Decompression:** Zip, Rar, Cab, Tar, Cpio, GZip, Bz2, Z, Xar, Xz, Lzip, Arj, Lha, Wim, Zstandard
+**Decompression:** Zip, Rar, Cab, Tar, Cpio, GZip, Bz2, Z, Xar, Xz, Lzip, Arj, Lha, Lzx, Wim, Zstandard
 
 ## Platform Independence
 
-Aspose.ZIP for .NET is implemented using Managed C# and can be used with any .NET language like C#, VB.NET, F# and so on. It can be integrated with any kind of .NET application, from ASP.NET web applications to Windows .NET applications. 
+Aspose.ZIP for .NET is implemented in managed C# and can be used with any .NET language, such as C#, VB.NET, or F#. It integrates seamlessly with any kind of .NET application, from ASP.NET web applications to Windows desktop applications. 
 
 ## Get Started with Aspose.ZIP for .NET
 
-Are you ready to give Aspose.ZIP for .NET a try? Simply execute `Install-Package Aspose.Zip` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.ZIP for .NET and want to upgrade the version, please execute `Update-Package Aspose.Zip` to get the latest version.
+To install Aspose.ZIP for .NET, run `Install-Package Aspose.Zip` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.ZIP for .NET and want to upgrade the version, please execute `Update-Package Aspose.Zip` to get the latest version.
 
 ## How to ZIP files in C#
 
@@ -68,14 +68,14 @@ using (var archive = new Archive("input_archive.zip"))
 ```csharp
 using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new SevenZipAESEncryptionSettings("p@s$"))))
 {
-   archive.CreateEntry("data.bin", new MemoryStream(new byte[] { 0x00, 0xFF }));
+   archive.CreateEntry("data.bin", "input_file.dat");
    archive.Save("result_archive.7z");
 }
 ```
 ------------
 ##### [Demos](https://products.aspose.app/zip/family):
-- [Zip-File](https://products.aspose.app/zip/compression)
-- [Unzip-File](https://products.aspose.app/zip/extract)
+- [Compress File](https://products.aspose.app/zip/compression)
+- [Extract File](https://products.aspose.app/zip/extract)
 - [Conversion](https://products.aspose.app/zip/conversion)
 - [Merger](https://products.aspose.app/zip/merger)
 ------------
