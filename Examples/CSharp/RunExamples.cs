@@ -75,6 +75,7 @@ namespace Aspose.ZIP.Examples
             #endregion
 
             #region Work with Cab
+            //CompressCabFile.Run();
             //DecompressCabToFolder.Run();
             #endregion
 
