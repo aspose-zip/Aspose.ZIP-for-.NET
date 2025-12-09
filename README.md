@@ -30,11 +30,11 @@ Directory | Description
 
 ## Compress Files As
 
-**Compression:** Zip, Tar, Cpio, GZip, Bz2, Iso, Lzip, LZMA, Xar, Xz, Z, Zstandard, 7z
+**Compression:** Zip, Tar, Cpio, GZip, Bz2, Iso, Cab, Lzip, LZ4, LZMA, Xar, Xz, Z, Zstandard, 7z
 
 ## Read Archives
 
-**Decompression:** Zip, Rar, Cab, Tar, Cpio, GZip, Bz2, Z, Xar, Xz, Lzip, Arj, Lha, Lzx, Wim, Zstandard
+**Decompression:** Zip, Rar, Cab, Tar, Cpio, GZip, Bz2, Z, Xar, Xz, Lzip, LZ4, Arj, Lha, Lzx, Wim, Zstandard
 
 ## Platform Independence
 
