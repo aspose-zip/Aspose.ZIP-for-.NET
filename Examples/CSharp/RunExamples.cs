@@ -9,6 +9,7 @@ using Aspose.ZIP.Examples.WorkingWithCpio;
 using Aspose.ZIP.Examples.WorkingWithGZip;
 using Aspose.ZIP.Examples.WorkingWithLzArchives;
 using Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives;
+using Aspose.ZIP.Examples.WorkingWithXar;
 using Aspose.ZIP.Examples.WorkingWithXzArchives;
 using Aspose.ZIP.Examples.WorkingWithZArchives;
 using  Aspose.ZIP.Examples.WorkWithLzma;
@@ -87,6 +88,11 @@ namespace Aspose.ZIP.Examples
             #region Work with Xz archives
             //CompressXzFile.Run();
             //DecompressXzFile.Run();
+            #endregion
+
+            #region Work with Xar archives
+            //ComposeXarArchive.Run();
+            //DecompressXarToFolder.Run();
             #endregion
 
             #region Work With Lz archives
