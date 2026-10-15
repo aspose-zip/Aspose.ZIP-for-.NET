@@ -6,6 +6,7 @@ using Aspose.ZIP.Examples.CompressToTarXX;
 using Aspose.ZIP.Examples.RarExtraction;
 using Aspose.ZIP.Examples.WorkingWithCab;
 using Aspose.ZIP.Examples.WorkingWithCpio;
+using Aspose.ZIP.Examples.WorkingWithFastLz;
 using Aspose.ZIP.Examples.WorkingWithGZip;
 using Aspose.ZIP.Examples.WorkingWithLzArchives;
 using Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives;
@@ -95,6 +96,10 @@ namespace Aspose.ZIP.Examples
             //DecompressXarToFolder.Run();
             #endregion
 
+            #region Work with FastLz streams
+            //CompressWithFastLzStream.Run();
+            #endregion
+
             #region Work With Lz archives
             //CompressLzFile.Run();
             //DecompressLzFile.Run();
@@ -117,6 +122,10 @@ namespace Aspose.ZIP.Examples
             
             #region Work with Lha
             //DecompressLhaToFolder.Run();
+            #endregion
+            
+            #region Work with Alz
+            //DecompressAlzToFolder.Run();
             #endregion
             
             #region Work with Lha
