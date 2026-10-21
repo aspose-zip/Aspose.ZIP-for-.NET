@@ -6,6 +6,7 @@ using Aspose.ZIP.Examples.CompressToTarXX;
 using Aspose.ZIP.Examples.RarExtraction;
 using Aspose.ZIP.Examples.WorkingWithCab;
 using Aspose.ZIP.Examples.WorkingWithCpio;
+using Aspose.ZIP.Examples.WorkingWithEgg;
 using Aspose.ZIP.Examples.WorkingWithFastLz;
 using Aspose.ZIP.Examples.WorkingWithGZip;
 using Aspose.ZIP.Examples.WorkingWithLzArchives;
@@ -126,6 +127,10 @@ namespace Aspose.ZIP.Examples
             
             #region Work with Alz
             //DecompressAlzToFolder.Run();
+            #endregion
+
+            #region Work with Egg
+            //DecompressEggToFolder.Run();
             #endregion
             
             #region Work with Lha
